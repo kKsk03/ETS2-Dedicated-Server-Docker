@@ -1,0 +1,21 @@
+services:
+  ets2-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ets2-server
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ:-UTC}
+      ETS2_AUTO_UPDATE: ${ETS2_AUTO_UPDATE:-true}
+      ETS2_VALIDATE_ON_UPDATE: ${ETS2_VALIDATE_ON_UPDATE:-false}
+      ETS2_BRANCH: ${ETS2_BRANCH:-public}
+      ETS2_DATA_HOME: ${ETS2_DATA_HOME:-/data/ets2data}
+      ETS2_FIX_PERMISSIONS: ${ETS2_FIX_PERMISSIONS:-true}
+      ETS2_REQUIRE_SERVER_PACKAGES: ${ETS2_REQUIRE_SERVER_PACKAGES:-true}
+    volumes:
+      - ./data:/data
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+      - "27016:27016/udp"
