@@ -1,6 +1,6 @@
 # ETS2 Docker Dedicated Server
 
-中文版见：`README.zh-CN.md`  
+中文版见：[`README.zh-CN.md`](https://github.com/kKsk03/ETS2-Dedicated-Server-Docker/blob/main/README.zh-CN.md)  
 
 You need a working `Docker` environment prepared in advance before following this guide.
 
