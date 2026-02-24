@@ -1,6 +1,6 @@
 # ETS2 Docker 专用服务器
 
-英文版见：`README.md`  
+英文版见：[`README.md`](https://github.com/kKsk03/ETS2-Dedicated-Server-Docker/blob/main/README.md)  
 
 需自行准备好完整 `Docker` 环境，方便后续进行直接配置。  
 
